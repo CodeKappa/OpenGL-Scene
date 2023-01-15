@@ -25,6 +25,10 @@ float shininess = 32.0f;
 
 float shadow = 1.0f;
 
+float constant = 1.0f;
+float linear = 0.0045f;
+float quadratic = 0.0075f;
+
 void computeLightComponents()
 {		
 	vec3 cameraPosEye = vec3(0.0f);//in eye coordinates, the viewer is situated at the origin
@@ -35,19 +39,22 @@ void computeLightComponents()
 	//compute light direction
 	vec3 lightDirN = normalize(lightDir);
 	
+	float dist = length(lightDir);
+	float att = 1.0f / (constant + linear * dist + quadratic * (dist * dist));
+
 	//compute view direction 
 	vec3 viewDirN = normalize(cameraPosEye - fPosEye.xyz);
 		
 	//compute ambient light
-	ambient = ambientStrength * lightColor;
+	ambient = att * ambientStrength * lightColor;
 	
 	//compute diffuse light
-	diffuse = max(dot(normalEye, lightDirN), 0.0f) * lightColor;
+	diffuse = att * max(dot(normalEye, lightDirN), 0.0f) * lightColor;
 	
 	//compute specular light
 	vec3 reflection = reflect(-lightDirN, normalEye);
 	float specCoeff = pow(max(dot(viewDirN, reflection), 0.0f), shininess);
-	specular = specularStrength * specCoeff * lightColor;
+	specular = att * specularStrength * specCoeff * lightColor;
 }
 
 

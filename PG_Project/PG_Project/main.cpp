@@ -15,6 +15,8 @@
 
 #include <iostream>
 
+#define nrOfLights 3
+
 const unsigned int SHADOW_WIDTH = 10048;
 const unsigned int SHADOW_HEIGHT = 10048;
 
@@ -29,6 +31,7 @@ glm::mat3 normalMatrix;
 
 // light parameters
 glm::vec3 lightDir;
+glm::vec3 lightRotation;
 glm::vec3 lightColor;
 
 GLuint shadowMapFBO;
@@ -164,116 +167,65 @@ void mouseCallback(GLFWwindow* window, double xpos, double ypos)
         pitch = -89.0f;
 
     myCamera.rotate(pitch, yaw);
-
-    view = myCamera.getViewMatrix();
-    myBasicShader.useShaderProgram();
-    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-    normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
 }
 
+float lightAngle = 0.0;
 void processMovement()
 {
     if (pressedKeys[GLFW_KEY_W])
     {
         myCamera.move(gps::MOVE_FORWARD, cameraSpeed);
-        //update view matrix
-        view = myCamera.getViewMatrix();
-        myBasicShader.useShaderProgram();
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // compute normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_S])
     {
         myCamera.move(gps::MOVE_BACKWARD, cameraSpeed);
-        //update view matrix
-        view = myCamera.getViewMatrix();
-        myBasicShader.useShaderProgram();
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // compute normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_A])
     {
         myCamera.move(gps::MOVE_LEFT, cameraSpeed);
-        //update view matrix
-        view = myCamera.getViewMatrix();
-        myBasicShader.useShaderProgram();
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // compute normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_D])
     {
         myCamera.move(gps::MOVE_RIGHT, cameraSpeed);
-        //update view matrix
-        view = myCamera.getViewMatrix();
-        myBasicShader.useShaderProgram();
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // compute normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_SPACE])
     {
         myCamera.move(gps::MOVE_UP, cameraSpeed);
-        //update view matrix
-        view = myCamera.getViewMatrix();
-        myBasicShader.useShaderProgram();
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // compute normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_LEFT_CONTROL])
     {
         myCamera.move(gps::MOVE_DOWN, cameraSpeed);
-        //update view matrix
-        view = myCamera.getViewMatrix();
-        myBasicShader.useShaderProgram();
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // compute normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_Q])
     {
         angle -= 1.0f;
         model = glm::rotate(glm::mat4(1.0f), glm::radians(angle), glm::vec3(0, 1, 0));
-        // update normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
     if (pressedKeys[GLFW_KEY_E])
     {
         angle += 1.0f;
         model = glm::rotate(glm::mat4(1.0f), glm::radians(angle), glm::vec3(0, 1, 0));
-        // update normal matrix for teapot
-        normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
     }
 
-    if (pressedKeys[GLFW_KEY_J]) {
-        //lightAngle -= 1.0f;	
-        lightDir.x -= 0.1f;
-        //lightRotation = glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f));
-        //lightDir = glm::vec3(lightRotation * glm::vec4(lightDir, 1.0f));
-        glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
-        //lightDir = glm::vec3(0.0f, 1.0f, 1.0f);
-        //lightRotation = glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f));
-        //lightDir = glm::vec3(lightRotation * glm::vec4(lightDir, 1.0f));
-        //glUniform3fv(lightDirLoc, 1, glm::value_ptr(glm::inverseTranspose(glm::mat3(view * lightRotation)) * lightDir));
+    if (pressedKeys[GLFW_KEY_J]) 
+    {
+        lightAngle -= 1.00f;	
+        if (lightAngle < 0.0f) lightAngle += 360.0f;
+        lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir, 1.0f));
     }
 
-    if (pressedKeys[GLFW_KEY_L]) {
-        //lightAngle += 0.1f;
-        //lightDir = glm::vec3(0.0f, 1.0f, 1.0f);
-        lightDir.x += 0.1f;
-        //lightRotation = glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f));
-        //lightDir = glm::vec3(lightRotation * glm::vec4(lightDir, 1.0f));
-        glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
+    if (pressedKeys[GLFW_KEY_L]) 
+    {
+        lightAngle += 1.00f;
+        if (lightAngle > 360.0f) lightAngle -= 360.0f;
+        lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir, 1.0f));
     }
 
     if (pressedKeys[GLFW_KEY_Q])
@@ -370,37 +322,22 @@ void initUniforms() {
     glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
 
     projection = glm::perspective(glm::radians(45.0f), (float)myWindow.getWindowDimensions().width / (float)myWindow.getWindowDimensions().height, 0.1f, 1000.0f);
-    projectionLoc = glGetUniformLocation(myCustomShader.shaderProgram, "projection");
-    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+projectionLoc = glGetUniformLocation(myCustomShader.shaderProgram, "projection");
+glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
-    //set the light direction (direction towards the light)
-    lightDir = glm::vec3(0.0f, 1.0f, -5.0f);
-    //lightRotation = glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f));
-    //lightDir = glm::vec3(lightRotation * glm::vec4(lightDir, 1.0f));
-    lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
-    glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
+//set the light direction (direction towards the light)
+lightDir = glm::vec3(0.0f, 2.0f, 2.0f);
+lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir, 1.0f));
+lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
+glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightRotation));
 
-    //set light color
-    lightColor = glm::vec3(1.0f, 1.0f, 1.0f); //white light
-    lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
-    glUniform3fv(lightColorLoc, 1, glm::value_ptr(lightColor));
+//set light color
+lightColor = glm::vec3(1.0f, 1.0f, 1.0f); //white light
+lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
+glUniform3fv(lightColorLoc, 1, glm::value_ptr(lightColor));
 
-    lightShader.useShaderProgram();
-    glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-}
-
-void renderTeapot(gps::Shader shader) {
-    // select active shader program
-    shader.useShaderProgram();
-
-    //send teapot model matrix data to shader
-    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-
-    //send teapot normal matrix data to shader
-    glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
-
-    // draw teapot
-    teapot.Draw(shader);
+lightShader.useShaderProgram();
+glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 }
 
 void initFBO() {
@@ -430,12 +367,10 @@ void initFBO() {
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
-glm::mat4 computeLightSpaceTrMatrix() {
-    glm::mat4 lightView = glm::lookAt(lightDir, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-
-    const GLfloat near_plane = 0.1f, far_plane = 500.0f;
-    glm::mat4 lightProjection = glm::ortho(-50.0f, 50.0f, -50.0f, 50.0f, near_plane, far_plane);
-
+glm::mat4 computeLightSpaceTrMatrix()
+{
+    glm::mat4 lightView = glm::lookAt(lightRotation, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::mat4 lightProjection = glm::ortho(-5.0f, 5.0f, -5.0f, 5.0f, 0.1f, 10.0f);
     glm::mat4 lightSpaceTrMatrix = lightProjection * lightView;
 
     return lightSpaceTrMatrix;
@@ -451,7 +386,7 @@ void drawObjects(gps::Shader shader, bool depthPass) {
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
     // do not send the normal matrix if we are rendering in the depth map
-    if (!depthPass) 
+    if (!depthPass)
     {
         normalMatrix = glm::mat3(glm::inverseTranspose(model));
         glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
@@ -475,7 +410,7 @@ void drawObjects(gps::Shader shader, bool depthPass) {
 
 
     // do not send the normal matrix if we are rendering in the depth map
-    if (!depthPass) 
+    if (!depthPass)
     {
         normalMatrix = glm::mat3(glm::inverseTranspose(model));
         glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
@@ -486,8 +421,8 @@ void drawObjects(gps::Shader shader, bool depthPass) {
 
 }
 
-void renderScene() {
-    //render the scene to the depth buffer
+void renderSceneToDepthBuffer()
+{
     depthMapShader.useShaderProgram();
     glUniformMatrix4fv(glGetUniformLocation(depthMapShader.shaderProgram, "lightSpaceTrMatrix"),
         1,
@@ -498,10 +433,14 @@ void renderScene() {
     glClear(GL_DEPTH_BUFFER_BIT);
     drawObjects(depthMapShader, true);
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
+}
 
+void renderScene() 
+{
     // render depth map on screen - toggled with the M key
     if (showDepthMap) 
     {
+        renderSceneToDepthBuffer();
 
         glViewport(0, 0, myWindow.getWindowDimensions().width, myWindow.getWindowDimensions().height);
 
@@ -518,7 +457,9 @@ void renderScene() {
         screenQuad.Draw(screenQuadShader);
         glEnable(GL_DEPTH_TEST);
     }
-    else {
+    else 
+    {
+        renderSceneToDepthBuffer();
 
         // final scene rendering pass (with shadows)
 
@@ -532,7 +473,7 @@ void renderScene() {
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
         //lightRotation = glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f));
-        glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
+        glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightRotation));
 
         //bind the shadow map
         glActiveTexture(GL_TEXTURE3);
@@ -552,8 +493,7 @@ void renderScene() {
 
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
 
-        //model = lightRotation;
-        model = glm::translate(model, 1.0f * lightDir);
+        model = glm::translate(model, 1.0f * lightRotation);
         model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
@@ -568,9 +508,13 @@ void renderScene() {
 }
 
 
-void cleanup() {
+void cleanup() 
+{
     myWindow.Delete();
-    //cleanup code for your own data
+    glDeleteTextures(1, &depthMapTexture);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glDeleteFramebuffers(1, &shadowMapFBO);
+
 }
 
 int main(int argc, const char* argv[]) 
