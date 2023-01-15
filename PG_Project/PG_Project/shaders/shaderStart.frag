@@ -1,5 +1,7 @@
 #version 410 core
 
+#define NUMBER_OF_LIGHTS 3
+
 in vec3 fNormal;
 in vec4 fPosEye;
 in vec2 fTexCoords;
@@ -8,8 +10,8 @@ in vec4 fragPosLightSpace;
 out vec4 fColor;
 
 //lighting
-uniform	vec3 lightDir;
-uniform	vec3 lightColor;
+uniform	vec3 lightDir[NUMBER_OF_LIGHTS];
+uniform	vec3 lightColor[NUMBER_OF_LIGHTS];
 
 //texture
 uniform sampler2D diffuseTexture;
@@ -25,9 +27,10 @@ float shininess = 32.0f;
 
 float shadow = 1.0f;
 
-float constant = 1.0f;
-float linear = 0.0045f;
-float quadratic = 0.0075f;
+float constant = 1.0f, linear = 0.0045f, quadratic = 0.0075f;
+float dist, att;
+vec3 lightDirN, reflection;
+float specCoeff;
 
 void computeLightComponents()
 {		
@@ -36,25 +39,32 @@ void computeLightComponents()
 	//transform normal
 	vec3 normalEye = normalize(fNormal);	
 	
-	//compute light direction
-	vec3 lightDirN = normalize(lightDir);
-	
-	float dist = length(lightDir);
-	float att = 1.0f / (constant + linear * dist + quadratic * (dist * dist));
+	ambient = vec3(0.0f);
+	diffuse = vec3(0.0f);
+	specular = vec3(0.0f);
 
-	//compute view direction 
-	vec3 viewDirN = normalize(cameraPosEye - fPosEye.xyz);
+	for(int i = 0; i < NUMBER_OF_LIGHTS; i++)
+	{
+		//compute light direction
+		lightDirN = normalize(lightDir[i]);
+
+		dist = length(lightDir[i]);
+		att = 1.0f / (constant + linear * dist + quadratic * (dist * dist));
+
+		//compute view direction 
+		vec3 viewDirN = normalize(cameraPosEye - fPosEye.xyz);
 		
-	//compute ambient light
-	ambient = att * ambientStrength * lightColor;
+		//compute ambient light
+		ambient += att * ambientStrength * lightColor[i];
 	
-	//compute diffuse light
-	diffuse = att * max(dot(normalEye, lightDirN), 0.0f) * lightColor;
+		//compute diffuse light
+		diffuse += att * max(dot(normalEye, lightDirN), 0.0f) * lightColor[i];
 	
-	//compute specular light
-	vec3 reflection = reflect(-lightDirN, normalEye);
-	float specCoeff = pow(max(dot(viewDirN, reflection), 0.0f), shininess);
-	specular = att * specularStrength * specCoeff * lightColor;
+		//compute specular light
+		reflection = reflect(-lightDirN, normalEye);
+		specCoeff = pow(max(dot(viewDirN, reflection), 0.0f), shininess);
+		specular += att * specularStrength * specCoeff * lightColor[i];
+	}
 }
 
 
@@ -73,8 +83,8 @@ float computeShadow()
 	float currentDepth = normalizedCoords.z;
 
 	// Check whether current frag pos is in shadow
-	//float bias = max(0.05f * (1.0f - dot(normal, lightDir)), 0.005f);
-	float bias = 0.005f;
+	float bias = max(0.05f * (1.0f - dot(fNormal, lightDir[0])), 0.005f);
+	//float bias = 0.005f;
 	float shadow = currentDepth - bias > closestDepth ? 1.0f : 0.0f;
 	
 	if (normalizedCoords.z > 1.0f)

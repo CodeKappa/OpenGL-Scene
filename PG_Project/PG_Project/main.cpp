@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-#define nrOfLights 3
+#define NUMBER_OF_LIGHTS 3
 
 const unsigned int SHADOW_WIDTH = 10048;
 const unsigned int SHADOW_HEIGHT = 10048;
@@ -30,9 +30,9 @@ glm::mat4 projection;
 glm::mat3 normalMatrix;
 
 // light parameters
-glm::vec3 lightDir;
+glm::vec3 lightDir[NUMBER_OF_LIGHTS];
+glm::vec3 lightColor[NUMBER_OF_LIGHTS];
 glm::vec3 lightRotation;
-glm::vec3 lightColor;
 
 GLuint shadowMapFBO;
 GLuint depthMapTexture;
@@ -64,8 +64,8 @@ gps::Model3D nanosuit2;
 gps::Model3D ground;
 gps::Model3D lightCube;
 gps::Model3D screenQuad;
-float angleY = 0.0f;
-GLfloat angle;
+
+GLfloat angleY, lightAngle;
 
 // shaders
 gps::Shader myBasicShader;
@@ -74,6 +74,7 @@ gps::Shader lightShader;
 gps::Shader screenQuadShader;
 gps::Shader depthMapShader;
 
+//skybox
 std::vector<const GLchar*> faces;
 gps::SkyBox mySkyBox;
 gps::Shader skyboxShader;
@@ -169,7 +170,6 @@ void mouseCallback(GLFWwindow* window, double xpos, double ypos)
     myCamera.rotate(pitch, yaw);
 }
 
-float lightAngle = 0.0;
 void processMovement()
 {
     if (pressedKeys[GLFW_KEY_W])
@@ -202,40 +202,26 @@ void processMovement()
         myCamera.move(gps::MOVE_DOWN, cameraSpeed);
     }
 
-    if (pressedKeys[GLFW_KEY_Q])
-    {
-        angle -= 1.0f;
-        model = glm::rotate(glm::mat4(1.0f), glm::radians(angle), glm::vec3(0, 1, 0));
-    }
-
-    if (pressedKeys[GLFW_KEY_E])
-    {
-        angle += 1.0f;
-        model = glm::rotate(glm::mat4(1.0f), glm::radians(angle), glm::vec3(0, 1, 0));
-    }
-
     if (pressedKeys[GLFW_KEY_J]) 
-    {
-        lightAngle -= 1.00f;	
-        if (lightAngle < 0.0f) lightAngle += 360.0f;
-        lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir, 1.0f));
-    }
-
-    if (pressedKeys[GLFW_KEY_L]) 
-    {
-        lightAngle += 1.00f;
-        if (lightAngle > 360.0f) lightAngle -= 360.0f;
-        lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir, 1.0f));
-    }
-
-    if (pressedKeys[GLFW_KEY_Q])
     {
         angleY -= 1.0f;
     }
 
-    if (pressedKeys[GLFW_KEY_E])
+    if (pressedKeys[GLFW_KEY_L]) 
     {
         angleY += 1.0f;
+    }
+
+    if (pressedKeys[GLFW_KEY_Q])
+    {
+        lightAngle -= 1.00f;
+        if (lightAngle < 0.0f) lightAngle += 360.0f;
+    }
+
+    if (pressedKeys[GLFW_KEY_E])
+    {
+        lightAngle += 1.00f;
+        if (lightAngle > 360.0f) lightAngle -= 360.0f;
     }
 }
 
@@ -322,22 +308,26 @@ void initUniforms() {
     glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
 
     projection = glm::perspective(glm::radians(45.0f), (float)myWindow.getWindowDimensions().width / (float)myWindow.getWindowDimensions().height, 0.1f, 1000.0f);
-projectionLoc = glGetUniformLocation(myCustomShader.shaderProgram, "projection");
-glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+    projectionLoc = glGetUniformLocation(myCustomShader.shaderProgram, "projection");
+    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
-//set the light direction (direction towards the light)
-lightDir = glm::vec3(0.0f, 2.0f, 2.0f);
-lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir, 1.0f));
-lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
-glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightRotation));
+    //set the light direction (direction towards the light)
+    lightDir[0] = glm::vec3(0.0f, 2.0f, 2.0f);
+    lightDir[1] = glm::vec3(0.0f, 2.0f, 2.0f);
+    lightDir[2] = glm::vec3(0.0f, 2.0f, 2.0f);
+    lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir[0], 1.0f));
+    lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
+    glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
 
-//set light color
-lightColor = glm::vec3(1.0f, 1.0f, 1.0f); //white light
-lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
-glUniform3fv(lightColorLoc, 1, glm::value_ptr(lightColor));
+    //set light color
+    lightColor[0] = glm::vec3(0.0f, 1.0f, 0.0f); //red light
+    lightColor[1] = glm::vec3(1.0f, 0.0f, 0.0f); //green light
+    lightColor[2] = glm::vec3(0.0f, 0.0f, 1.0f); //blue light
+    lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
+    glUniform3fv(lightColorLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightColor[0]));
 
-lightShader.useShaderProgram();
-glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+    lightShader.useShaderProgram();
+    glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 }
 
 void initFBO() {
@@ -380,8 +370,6 @@ void drawObjects(gps::Shader shader, bool depthPass) {
 
     shader.useShaderProgram();
 
-    //leaf.Draw(shader);
-
     model = glm::rotate(glm::mat4(1.0f), glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
@@ -391,8 +379,6 @@ void drawObjects(gps::Shader shader, bool depthPass) {
         normalMatrix = glm::mat3(glm::inverseTranspose(model));
         glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
     }
-
-
 
     nanosuit.Draw(shader);
 
@@ -471,8 +457,7 @@ void renderScene()
 
         view = myCamera.getViewMatrix();
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-
-        //lightRotation = glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f));
+        lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir[0], 1.0f));
         glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightRotation));
 
         //bind the shadow map
