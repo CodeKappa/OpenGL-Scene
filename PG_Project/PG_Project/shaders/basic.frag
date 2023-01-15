@@ -10,9 +10,11 @@ out vec4 fColor;
 uniform mat4 model;
 uniform mat4 view;
 uniform mat3 normalMatrix;
+
 //lighting
 uniform vec3 lightDir;
 uniform vec3 lightColor;
+
 // textures
 uniform sampler2D diffuseTexture;
 uniform sampler2D specularTexture;

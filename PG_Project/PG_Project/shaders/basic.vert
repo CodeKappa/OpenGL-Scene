@@ -11,6 +11,8 @@ out vec2 fTexCoords;
 uniform mat4 model;
 uniform mat4 view;
 uniform mat4 projection;
+uniform	mat3 normalMatrix;
+uniform mat4 lightSpaceTrMatrix;
 
 void main() 
 {

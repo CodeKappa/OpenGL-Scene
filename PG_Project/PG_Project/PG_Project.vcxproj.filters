@@ -39,6 +39,9 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.hpp">
@@ -62,12 +65,33 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SkyBox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\basic.frag">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="shaders\basic.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\depthMap.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\depthMap.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\screenQuad.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\screenQuad.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\shaderStart.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\shaderStart.vert">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
