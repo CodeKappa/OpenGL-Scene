@@ -32,6 +32,7 @@ glm::mat3 normalMatrix;
 // light parameters
 glm::vec3 lightDir[NUMBER_OF_LIGHTS];
 glm::vec3 lightColor[NUMBER_OF_LIGHTS];
+GLint lightEnable[NUMBER_OF_LIGHTS];
 glm::vec3 lightRotation;
 
 GLuint shadowMapFBO;
@@ -46,6 +47,7 @@ GLuint projectionLoc;
 GLuint normalMatrixLoc;
 GLuint lightDirLoc;
 GLuint lightColorLoc;
+GLuint lightEnableLoc;
 
 // camera
 gps::Camera myCamera(
@@ -326,6 +328,14 @@ void initUniforms() {
     lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
     glUniform3fv(lightColorLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightColor[0]));
 
+    //set which light are on
+    lightEnable[0] = 1;
+    lightEnable[1] = 1;
+    lightEnable[2] = 1;
+    lightEnableLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightEnable");
+    glUniform1iv(lightEnableLoc, NUMBER_OF_LIGHTS, lightEnable);
+
+    //cube
     lightShader.useShaderProgram();
     glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 }
@@ -504,7 +514,6 @@ void cleanup()
 
 int main(int argc, const char* argv[]) 
 {
-
     try 
     {
         initOpenGLWindow();

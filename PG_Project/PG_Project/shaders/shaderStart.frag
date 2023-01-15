@@ -12,6 +12,7 @@ out vec4 fColor;
 //lighting
 uniform	vec3 lightDir[NUMBER_OF_LIGHTS];
 uniform	vec3 lightColor[NUMBER_OF_LIGHTS];
+uniform int lightEnable[NUMBER_OF_LIGHTS];
 
 //texture
 uniform sampler2D diffuseTexture;
@@ -45,6 +46,8 @@ void computeLightComponents()
 
 	for(int i = 0; i < NUMBER_OF_LIGHTS; i++)
 	{
+		if(lightEnable[i] == 0) continue;
+
 		//compute light direction
 		lightDirN = normalize(lightDir[i]);
 
