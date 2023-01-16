@@ -8,10 +8,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.002
 Ns 250.000000
@@ -30,10 +30,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.004
 Ka 1.000000 1.000000 1.000000
@@ -42,10 +42,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.005
 Ka 1.000000 1.000000 1.000000
@@ -54,10 +54,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.006
 Ka 1.000000 1.000000 1.000000
@@ -66,10 +66,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.007
 Ka 1.000000 1.000000 1.000000
@@ -78,10 +78,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.008
 Ka 1.000000 1.000000 1.000000
@@ -90,10 +90,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material.009
 Ka 1.000000 1.000000 1.000000
@@ -102,10 +102,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd woodfence_low_woodfence_BaseColor.png
-map_Ns woodfence_low_woodfence_Roughness.png
-map_refl woodfence_low_woodfence_Metallic.png
-map_Bump woodfence_low_woodfence_normal_openGL.png
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
 newmtl Material1
 Ka 1.000000 1.000000 1.000000
@@ -114,10 +114,50 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd fencegate_low_fencegate_BaseColor.png
-map_Ns fencegate_low_fencegate_Roughness.png
-map_refl fencegate_low_fencegate_Metallic.png
-map_Bump fencegate_low_fencegate_normal_openGL.png
+map_Kd textures/fence/fencegate_low_fencegate_BaseColor.png
+map_Ns textures/fence/fencegate_low_fencegate_Roughness.png
+map_refl textures/fence/fencegate_low_fencegate_Metallic.png
+map_Bump textures/fence/fencegate_low_fencegate_normal_openGL.png
+
+newmtl None.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None_logwood_bc.png.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl None_logwood_bc.png.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
 
 newmtl standardSurface1
 Ns 250.000000
@@ -126,6 +166,46 @@ Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 2
-map_Kd standardSurface1_baseColor.png
-map_d standardSurface1_baseColor.png
-map_Bump -bm 1.000000 standardSurface1_normal.png
+map_Kd textures/windmill/standardSurface1_baseColor.png
+map_d textures/windmill/standardSurface1_baseColor.png
+map_Bump -bm 1.000000 textures/windmill/standardSurface1_normal.png
+
+newmtl thatch.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch_opacity.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl thatch_opacity.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc3a.png
+map_d textures/silo/thatch_opacity.png
