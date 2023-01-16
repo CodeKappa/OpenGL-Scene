@@ -139,6 +139,16 @@ d 1.000000
 illum 2
 map_Kd textures/silo/boards_and_planks_bc.png
 
+newmtl None.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
 newmtl None_logwood_bc.png.001
 Ns 0.000000
 Ka 1.000000 1.000000 1.000000
@@ -158,6 +168,49 @@ Ni 1.450000
 d 1.000000
 illum 2
 map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl None_logwood_bc.png.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl dark_logwood_pattern.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/forge/dark_pattern_logwood_bc.jpg
+map_d textures/forge/pattern_logwood_roughness.jpg
+map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
+
+newmtl light_wood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/eagleHut/boards_bc.jpg
+map_d textures/eagleHut/boards_roughness.jpg
+map_Bump -bm 1.000000 textures/eagleHut/boards_n.jpg
+
+newmtl pattern_logwood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/forge/pattern_logwood_bc.jpg
+map_d textures/forge/pattern_logwood_roughness.jpg
+map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
 
 newmtl standardSurface1
 Ns 250.000000
@@ -190,6 +243,27 @@ d 1.000000
 illum 2
 map_Kd textures/silo/thatch_bc.png
 
+newmtl thatch.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
 newmtl thatch_opacity.001
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
@@ -209,3 +283,35 @@ Ni 1.000000
 illum 1
 map_Kd textures/silo/thatch_bc3a.png
 map_d textures/silo/thatch_opacity.png
+
+newmtl thatch_opacity.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl wood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood2.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
