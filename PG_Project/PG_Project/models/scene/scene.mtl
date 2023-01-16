@@ -1,4 +1,4 @@
-# Blender 3.3.1 MTL File: 'None'
+# Blender 3.3.1 MTL File: 'scene.blend'
 # www.blender.org
 
 newmtl Material.001
@@ -179,6 +179,19 @@ d 1.000000
 illum 2
 map_Kd textures/silo/tiled_dirty_planks.png
 
+newmtl concrete
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/concreteHouse/concrete_bc.jpg
+map_d textures/concreteHouse/concrete_roughness.jpg
+map_Bump -bm 1.000000 textures/concreteHouse/concrete_n.jpg
+
 newmtl dark_logwood_pattern.001
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
@@ -189,6 +202,19 @@ illum 2
 map_Kd textures/forge/dark_pattern_logwood_bc.jpg
 map_d textures/forge/pattern_logwood_roughness.jpg
 map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
+
+newmtl dirty_wood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
 
 newmtl light_wood.001
 Ns 96.078453
@@ -211,6 +237,58 @@ illum 2
 map_Kd textures/forge/pattern_logwood_bc.jpg
 map_d textures/forge/pattern_logwood_roughness.jpg
 map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
+
+newmtl red_dirty_wood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.064166 0.074235
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl redwood
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/concreteHouse/T_tiled_redwood_bc.png
+map_d textures/concreteHouse/T_tiled_redwood_n.png
+map_Bump -bm 1.000000 textures/concreteHouse/T_tiled_redwood_n.png
+
+newmtl redwood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/storage/T_tiled_redwood_bc.png
+map_d textures/storage/T_tiled_redwood_r.png
+map_Bump -bm 1.000000 textures/storage/T_tiled_redwood_n.png
+
+newmtl roof
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/concreteHouse/roof_bc.png
+map_d textures/concreteHouse/roof_roughness.png
+map_Bump -bm 1.000000 textures/concreteHouse/roof_n.png
 
 newmtl standardSurface1
 Ns 250.000000
