@@ -48,6 +48,7 @@ GLuint normalMatrixLoc;
 GLuint lightDirLoc;
 GLuint lightColorLoc;
 GLuint lightEnableLoc;
+GLuint enableDiscardLoc;
 
 // camera
 gps::Camera myCamera(
@@ -60,12 +61,11 @@ GLfloat cameraSpeed = 0.1f;
 GLboolean pressedKeys[1024];
 
 // models
-gps::Model3D teapot;
 gps::Model3D nanosuit;
 gps::Model3D nanosuit2;
-gps::Model3D ground;
 gps::Model3D lightCube;
 gps::Model3D screenQuad;
+gps::Model3D scene;
 
 GLfloat angleY, lightAngle;
 
@@ -81,6 +81,11 @@ std::vector<const GLchar*> faces;
 gps::SkyBox mySkyBox;
 gps::Shader skyboxShader;
 GLuint textureID;
+
+//mouse
+bool firstMouse = true;
+double lastX, lastY, mouseSensitivity = 0.1f;
+double yaw = -90.0f, pitch = 0.0f;
 
 GLenum glCheckError_(const char* file, int line)
 {
@@ -141,9 +146,6 @@ void keyboardCallback(GLFWwindow* window, int key, int scancode, int action, int
     }
 }
 
-bool firstMouse = true;
-double lastX, lastY, mouseSensitivity = 0.1f;
-double yaw = -90.0f, pitch = 0.0f;
 void mouseCallback(GLFWwindow* window, double xpos, double ypos)
 {
     if (firstMouse)
@@ -250,14 +252,13 @@ void initOpenGLState() {
     glEnable(GL_FRAMEBUFFER_SRGB);
 }
 
-void initModels() {
-    teapot.LoadModel("models/teapot/teapot20segUT.obj");
+void initModels() 
+{
     nanosuit.LoadModel("objects/nanosuit/nanosuit.obj");
-    nanosuit2.LoadModel("models/teapot/teapot20segUT.obj");
-    ground.LoadModel("objects/ground/ground.obj");
+    nanosuit2.LoadModel("objects/nanosuit/nanosuit.obj");
+    scene.LoadModel("models/scene/scene.obj");
     lightCube.LoadModel("objects/cube/cube.obj");
     screenQuad.LoadModel("objects/quad/quad.obj");
-    //leaf.LoadModel("objects/lab12/leaf.obj");
 
     faces.push_back("textures/skybox/right.tga");
     faces.push_back("textures/skybox/left.tga");
@@ -313,11 +314,15 @@ void initUniforms() {
     projectionLoc = glGetUniformLocation(myCustomShader.shaderProgram, "projection");
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
+    enableDiscardLoc = glGetUniformLocation(myCustomShader.shaderProgram, "enableDiscard");
+    glUniform1i(enableDiscardLoc, 0);
+
     //set the light direction (direction towards the light)
-    lightDir[0] = glm::vec3(0.0f, 2.0f, 2.0f);
-    lightDir[1] = glm::vec3(0.0f, 2.0f, 2.0f);
-    lightDir[2] = glm::vec3(0.0f, 2.0f, 2.0f);
-    lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir[0], 1.0f));
+    
+    lightRotation = glm::vec3(25.0f, 25.0f, 25.0f);
+    lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+    lightDir[1] = lightRotation;
+    lightDir[2] = lightRotation;
     lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
     glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
 
@@ -369,21 +374,23 @@ void initFBO() {
 
 glm::mat4 computeLightSpaceTrMatrix()
 {
-    glm::mat4 lightView = glm::lookAt(lightRotation, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    glm::mat4 lightProjection = glm::ortho(-5.0f, 5.0f, -5.0f, 5.0f, 0.1f, 10.0f);
+    glm::mat4 lightView = glm::lookAt(lightDir[0], glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::mat4 lightProjection = glm::ortho(-50.0f, 50.0f, -50.0f, 50.0f, 0.01f, 100.0f);
     glm::mat4 lightSpaceTrMatrix = lightProjection * lightView;
 
     return lightSpaceTrMatrix;
 }
 
-void drawObjects(gps::Shader shader, bool depthPass) {
-
+GLint x = 1;
+GLint y = 0;
+void drawObjects(gps::Shader shader, bool depthPass) 
+{
     shader.useShaderProgram();
-
+    if (!depthPass) glUniform1i(enableDiscardLoc, 0);
+    // nanosuit 1
     model = glm::rotate(glm::mat4(1.0f), glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
-    // do not send the normal matrix if we are rendering in the depth map
     if (!depthPass)
     {
         normalMatrix = glm::mat3(glm::inverseTranspose(model));
@@ -392,29 +399,28 @@ void drawObjects(gps::Shader shader, bool depthPass) {
 
     nanosuit.Draw(shader);
 
+    // nanosuit 2
     model = glm::rotate(glm::mat4(1.0f), glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
-    glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-
     model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-
-    nanosuit2.Draw(shader);
-
-    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
-    model = glm::scale(model, glm::vec3(0.5f));
-    glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-
-
-    // do not send the normal matrix if we are rendering in the depth map
+    
     if (!depthPass)
     {
         normalMatrix = glm::mat3(glm::inverseTranspose(model));
         glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
     }
 
-    ground.Draw(shader);
+    
+    nanosuit2.Draw(shader);
+    
 
+    // scene
+    if (!depthPass) glUniform1i(enableDiscardLoc, 1);
+    model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
+    model = glm::scale(model, glm::vec3(9.0f));
+    glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
+    scene.Draw(shader);
 }
 
 void renderSceneToDepthBuffer()
@@ -436,10 +442,11 @@ void renderScene()
     // render depth map on screen - toggled with the M key
     if (showDepthMap) 
     {
+        lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+
         renderSceneToDepthBuffer();
 
         glViewport(0, 0, myWindow.getWindowDimensions().width, myWindow.getWindowDimensions().height);
-
         glClear(GL_COLOR_BUFFER_BIT);
 
         screenQuadShader.useShaderProgram();
@@ -460,15 +467,15 @@ void renderScene()
         // final scene rendering pass (with shadows)
 
         glViewport(0, 0, myWindow.getWindowDimensions().width, myWindow.getWindowDimensions().height);
-
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         myCustomShader.useShaderProgram();
 
         view = myCamera.getViewMatrix();
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        lightRotation = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightDir[0], 1.0f));
-        glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightRotation));
+
+        lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+        glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
 
         //bind the shadow map
         glActiveTexture(GL_TEXTURE3);
@@ -488,20 +495,17 @@ void renderScene()
 
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
 
-        model = glm::translate(model, 1.0f * lightRotation);
+        model = glm::translate(model, 1.0f * lightDir[0]);
         model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
         lightCube.Draw(lightShader);
 
-
-        //-------------------------------------
-
+        // skybox
         skyboxShader.useShaderProgram();
         mySkyBox.Draw(skyboxShader, view, projection);
     }
 }
-
 
 void cleanup() 
 {

@@ -14,11 +14,6 @@ uniform	vec3 lightDir[NUMBER_OF_LIGHTS];
 uniform	vec3 lightColor[NUMBER_OF_LIGHTS];
 uniform int lightEnable[NUMBER_OF_LIGHTS];
 
-//texture
-uniform sampler2D diffuseTexture;
-uniform sampler2D specularTexture;
-uniform sampler2D shadowMap;
-
 vec3 ambient;
 float ambientStrength = 0.2f;
 vec3 diffuse;
@@ -26,9 +21,18 @@ vec3 specular;
 float specularStrength = 0.5f;
 float shininess = 32.0f;
 
+//texture
+uniform sampler2D diffuseTexture;
+uniform sampler2D specularTexture;
+uniform sampler2D shadowMap;
+
+uniform int enableDiscard;
+
+
+
 float shadow = 1.0f;
 
-float constant = 1.0f, linear = 0.0045f, quadratic = 0.0075f;
+float constant = 1.0f, linear = 0.014f, quadratic = 0.0007f;
 float dist, att;
 vec3 lightDirN, reflection;
 float specCoeff;
@@ -98,7 +102,7 @@ float computeShadow()
 
 float computeFog()
 {
-	 float fogDensity = 0.05f;
+	 float fogDensity = 0.00f;
 	 float fragmentDistance = length(fPosEye);
 	 float fogFactor = exp(-pow(fragmentDistance * fogDensity, 2));
  
@@ -116,9 +120,13 @@ void main()
 	diffuse *= texture(diffuseTexture, fTexCoords).rgb;
 	specular *= texture(specularTexture, fTexCoords).rgb;
 
-	vec4 colorFromTexture = texture(diffuseTexture, fTexCoords);
-//	if(colorFromTexture.a < 0.1)
-//		discard;
+	if(enableDiscard == 1)
+	{
+		vec4 colorFromTexture = texture(diffuseTexture, fTexCoords);
+		if(colorFromTexture.a < 0.1)
+			discard;
+	}
+
 
 	//modulate with shadow
 	shadow = computeShadow();
