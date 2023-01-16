@@ -1,5 +1,202 @@
-# Blender 3.3.1 MTL File: 'scene.blend'
+# Blender 3.3.1 MTL File: 'None'
 # www.blender.org
+
+newmtl 02___Default
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/02___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/02___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/02___Default_normal.png
+
+newmtl 02___Default.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/02___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/02___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/02___Default_normal.png
+
+newmtl 02___Default.002
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/02___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/02___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/02___Default_normal.png
+
+newmtl 02___Default.003
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/02___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/02___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/02___Default_normal.png
+
+newmtl 02___Default.004
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/02___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/02___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/02___Default_normal.png
+
+newmtl 07___Default
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/07___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/07___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/07___Default_normal.png
+
+newmtl 07___Default.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/07___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/07___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/07___Default_normal.png
+
+newmtl 07___Default.002
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/07___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/07___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/07___Default_normal.png
+
+newmtl 07___Default.004
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/07___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/07___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/07___Default_normal.png
+
+newmtl 08___Default
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/08___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/08___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/08___Default_normal.png
+
+newmtl 08___Default.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/08___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/08___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/08___Default_normal.png
+
+newmtl 08___Default.002
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/08___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/08___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/08___Default_normal.png
+
+newmtl 08___Default.004
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/08___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/08___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/08___Default_normal.png
+
+newmtl 09___Default.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/09___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/09___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/09___Default_normal.png
+
+newmtl 09___Default.004
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/armoredHorse/09___Default_baseColor.jpeg
+map_Ns textures/horses/armoredHorse/09___Default_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/armoredHorse/09___Default_normal.png
+
+newmtl Armor_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/manAndHorse/Armor_Mat_baseColor.jpeg
+map_Ns textures/horses/manAndHorse/Armor_Mat_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/manAndHorse/Armor_Mat_normal.jpeg
+
+newmtl Armor_Mat.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/manAndHorse/Armor_Mat_baseColor.jpeg
+map_Ns textures/horses/manAndHorse/Armor_Mat_metallicRoughness.png
+map_Bump -bm 1.000000 textures/horses/manAndHorse/Armor_Mat_normal.jpeg
+
+newmtl Lanternlambert7SG
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
 
 newmtl Material.001
 Ka 1.000000 1.000000 1.000000
@@ -107,6 +304,417 @@ map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
 map_refl textures/fence/woodfence_low_woodfence_Metallic.png
 map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
 
+newmtl Material.010
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.011
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.012
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.013
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.015
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.016
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.017
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.018
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.019
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.020
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.021
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.022
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.023
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.024
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.025
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.026
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.027
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.028
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.029
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.030
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.031
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.032
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
+newmtl Material.033
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.035
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.041
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.043
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.049
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.051
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.057
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/fence/woodfence_low_woodfence_BaseColor.png
+map_Ns textures/fence/woodfence_low_woodfence_Roughness.png
+map_refl textures/fence/woodfence_low_woodfence_Metallic.png
+map_Bump textures/fence/woodfence_low_woodfence_normal_openGL.png
+
+newmtl Material.059
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.060
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.061
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.062
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.063
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.064
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.065
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/totem/base_color.png
+
+newmtl Material.066
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/rock/Material_baseColor.png
+map_Bump -bm 1.000000 textures/rock/Material_normal.png
+
 newmtl Material1
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
@@ -118,6 +726,28 @@ map_Kd textures/fence/fencegate_low_fencegate_BaseColor.png
 map_Ns textures/fence/fencegate_low_fencegate_Roughness.png
 map_refl textures/fence/fencegate_low_fencegate_Metallic.png
 map_Bump textures/fence/fencegate_low_fencegate_normal_openGL.png
+
+newmtl Material_43
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/aztec/Material_43_baseColor.jpeg
+map_Bump -bm 1.000000 textures/aztec/Material_43_normal.png
+
+newmtl Material_43.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/aztec/Material_43_baseColor.jpeg
+map_Bump -bm 1.000000 textures/aztec/Material_43_normal.png
 
 newmtl None.001
 Ns 0.000000
@@ -139,7 +769,37 @@ d 1.000000
 illum 2
 map_Kd textures/silo/boards_and_planks_bc.png
 
-newmtl None.003
+newmtl None.004
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None.005
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None.006
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None.007
 Ns 0.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.800000 0.800000 0.800000
@@ -169,7 +829,7 @@ d 1.000000
 illum 2
 map_Kd textures/silo/tiled_dirty_planks.png
 
-newmtl None_logwood_bc.png.003
+newmtl None_logwood_bc.png.004
 Ns 0.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.800000 0.800000 0.800000
@@ -179,14 +839,74 @@ d 1.000000
 illum 2
 map_Kd textures/silo/tiled_dirty_planks.png
 
+newmtl None_logwood_bc.png.005
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl None_logwood_bc.png.006
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl None_logwood_bc.png.007
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl Podium
+Ns 199.663208
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_d textures/horses/electricHorse/Podium_baseColor.png
+
 newmtl concrete
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
-Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
-d 1.000000
+illum 2
+map_Kd textures/concreteHouse/concrete_bc.jpg
+map_d textures/concreteHouse/concrete_roughness.jpg
+map_Bump -bm 1.000000 textures/concreteHouse/concrete_n.jpg
+
+newmtl concrete.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/concrete_bc.jpg
+map_d textures/concreteHouse/concrete_roughness.jpg
+map_Bump -bm 1.000000 textures/concreteHouse/concrete_n.jpg
+
+newmtl concrete.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
 illum 2
 map_Kd textures/concreteHouse/concrete_bc.jpg
 map_d textures/concreteHouse/concrete_roughness.jpg
@@ -203,18 +923,175 @@ map_Kd textures/forge/dark_pattern_logwood_bc.jpg
 map_d textures/forge/pattern_logwood_roughness.jpg
 map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
 
-newmtl dirty_wood.001
+newmtl dirty_wood.002
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
-Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
-d 1.000000
 illum 2
 map_Kd textures/reedHut/sticks_basecolor.png
 map_d textures/reedHut/sticks+roof_roughness.jpg
 map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl dirty_wood.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl initialShadingGroup
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert2SG
+Ns 73.617279
+Ka 0.753007 0.753007 0.753007
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/campfire/lambert2SG_baseColor.jpeg
+
+newmtl lambert3SG
+Ns 895.930969
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert3SG_baseColor.jpeg
+
+newmtl lambert4SG
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert5SG
+Ns 556.214294
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert5SG_baseColor.jpeg
+
+newmtl lambert6SG
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert6SG_baseColor.jpeg
 
 newmtl light_wood.001
 Ns 96.078453
@@ -227,6 +1104,57 @@ map_Kd textures/eagleHut/boards_bc.jpg
 map_d textures/eagleHut/boards_roughness.jpg
 map_Bump -bm 1.000000 textures/eagleHut/boards_n.jpg
 
+newmtl light_wood.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/eagleHut/boards_bc.jpg
+map_d textures/eagleHut/boards_roughness.jpg
+map_Bump -bm 1.000000 textures/eagleHut/boards_n.jpg
+
+newmtl material
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/chicken/material_diffuse.png
+map_Ks textures/chicken/material_specularGlossiness.png
+
+newmtl material.001
+Ns 30.996521
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+illum 2
+map_Kd textures/horses/electricHorse/material_baseColor.png
+map_d textures/horses/electricHorse/material_baseColor.png
+map_Ke textures/horses/electricHorse/material_emissive.png
+
+newmtl material.002
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/chicken/material_diffuse.png
+map_Ks textures/chicken/material_specularGlossiness.png
+
+newmtl material.003
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/chicken/material_diffuse.png
+map_Ks textures/chicken/material_specularGlossiness.png
+
 newmtl pattern_logwood.001
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
@@ -238,14 +1166,111 @@ map_Kd textures/forge/pattern_logwood_bc.jpg
 map_d textures/forge/pattern_logwood_roughness.jpg
 map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
 
-newmtl red_dirty_wood.001
+newmtl red_dirty_wood.002
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
-Kd 0.640000 0.064166 0.074235
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
-d 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl red_dirty_wood.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
 illum 2
 map_Kd textures/reedHut/roof_basecolor.png
 map_d textures/reedHut/sticks+roof_roughness.jpg
@@ -254,11 +1279,9 @@ map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
 newmtl redwood
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
-Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
-d 1.000000
 illum 2
 map_Kd textures/concreteHouse/T_tiled_redwood_bc.png
 map_d textures/concreteHouse/T_tiled_redwood_n.png
@@ -267,24 +1290,64 @@ map_Bump -bm 1.000000 textures/concreteHouse/T_tiled_redwood_n.png
 newmtl redwood.001
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
-Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
-d 1.000000
 illum 2
 map_Kd textures/storage/T_tiled_redwood_bc.png
 map_d textures/storage/T_tiled_redwood_r.png
 map_Bump -bm 1.000000 textures/storage/T_tiled_redwood_n.png
 
-newmtl roof
+newmtl redwood.002
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
-Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
-d 1.000000
+illum 2
+map_Kd textures/concreteHouse/T_tiled_redwood_bc.png
+map_d textures/concreteHouse/T_tiled_redwood_n.png
+map_Bump -bm 1.000000 textures/concreteHouse/T_tiled_redwood_n.png
+
+newmtl redwood.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/T_tiled_redwood_bc.png
+map_d textures/concreteHouse/T_tiled_redwood_n.png
+map_Bump -bm 1.000000 textures/concreteHouse/T_tiled_redwood_n.png
+
+newmtl roof
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/roof_bc.png
+map_d textures/concreteHouse/roof_roughness.png
+map_Bump -bm 1.000000 textures/concreteHouse/roof_n.png
+
+newmtl roof.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/roof_bc.png
+map_d textures/concreteHouse/roof_roughness.png
+map_Bump -bm 1.000000 textures/concreteHouse/roof_n.png
+
+newmtl roof.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
 illum 2
 map_Kd textures/concreteHouse/roof_bc.png
 map_d textures/concreteHouse/roof_roughness.png
@@ -321,7 +1384,18 @@ d 1.000000
 illum 2
 map_Kd textures/silo/thatch_bc.png
 
-newmtl thatch.003
+newmtl thatch.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.005
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
@@ -331,7 +1405,59 @@ d 1.000000
 illum 2
 map_Kd textures/silo/thatch_bc.png
 
-newmtl thatch.004
+newmtl thatch.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.011
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
@@ -362,7 +1488,7 @@ illum 1
 map_Kd textures/silo/thatch_bc3a.png
 map_d textures/silo/thatch_opacity.png
 
-newmtl thatch_opacity.003
+newmtl thatch_opacity.004
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
 Ks 0.000000 0.000000 0.000000
@@ -371,6 +1497,47 @@ Ni 1.000000
 illum 1
 map_Kd textures/silo/thatch_bc.png
 map_d textures/silo/thatch_opacity.png
+
+newmtl thatch_opacity.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc3a.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl thatch_opacity.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc3a.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl thatch_opacity.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl uv.055__0
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/horses/electricHorse/uv.055__0_baseColor.png
+map_Ke textures/horses/electricHorse/uv.055__0_emissive.png
+map_Bump -bm 1.000000 textures/horses/electricHorse/uv.055__0_normal.png
 
 newmtl wood.001
 Ns 96.078453
@@ -383,7 +1550,73 @@ map_Kd textures/hut/base_color.png
 map_d textures/hut/Roughness.png
 map_Bump -bm 1.000000 textures/hut/normal.png
 
+newmtl wood.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
 newmtl wood2.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.004
 Ns 96.078453
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000

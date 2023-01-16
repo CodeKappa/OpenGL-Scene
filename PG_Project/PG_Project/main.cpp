@@ -56,7 +56,7 @@ gps::Camera myCamera(
     glm::vec3(0.0f, 0.0f, -10.0f),
     glm::vec3(0.0f, 1.0f, 0.0f));
 
-GLfloat cameraSpeed = 0.1f;
+GLfloat cameraSpeed = 0.3f;
 
 GLboolean pressedKeys[1024];
 
