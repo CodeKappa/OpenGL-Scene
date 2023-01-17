@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-#define NUMBER_OF_LIGHTS 3
+#define NUMBER_OF_LIGHTS 13
 
 const unsigned int SHADOW_WIDTH = 15048;
 const unsigned int SHADOW_HEIGHT = 15048;
@@ -34,6 +34,7 @@ glm::vec3 lightDir[NUMBER_OF_LIGHTS];
 glm::vec3 lightColor[NUMBER_OF_LIGHTS];
 GLint lightEnable[NUMBER_OF_LIGHTS];
 glm::vec3 lightRotation;
+GLint color[10];
 
 GLuint shadowMapFBO;
 GLuint depthMapTexture;
@@ -49,9 +50,14 @@ GLuint lightDirLoc;
 GLuint lightColorLoc;
 GLuint lightEnableLoc;
 GLuint enableDiscardLoc;
+GLuint colorLoc;
 
 // camera
 gps::Camera myCamera(
+    glm::vec3(0.0f, 0.0f, 3.0f),
+    glm::vec3(0.0f, 0.0f, -10.0f),
+    glm::vec3(0.0f, 1.0f, 0.0f));
+gps::Camera myCameraPresentation(
     glm::vec3(0.0f, 0.0f, 3.0f),
     glm::vec3(0.0f, 0.0f, -10.0f),
     glm::vec3(0.0f, 1.0f, 0.0f));
@@ -64,14 +70,15 @@ GLboolean pressedKeys[1024];
 gps::Model3D nanosuit;
 gps::Model3D nanosuit2;
 gps::Model3D lightCube;
+gps::Model3D lightCubes[10];
 gps::Model3D screenQuad;
 gps::Model3D scene;
 gps::Model3D windmill;
+gps::Model3D water[2000];
 
 GLfloat angleY, lightAngle, windAngle;
 
 // shaders
-gps::Shader myBasicShader;
 gps::Shader myCustomShader;
 gps::Shader lightShader;
 gps::Shader screenQuadShader;
@@ -87,6 +94,9 @@ GLuint textureID;
 bool firstMouse = true;
 double lastX, lastY, mouseSensitivity = 0.1f;
 double yaw = -90.0f, pitch = 0.0f;
+
+glm::vec3 aux, aux2, water_drops[2000];
+bool presentation = 0;
 
 GLenum glCheckError_(const char* file, int line)
 {
@@ -122,25 +132,80 @@ GLenum glCheckError_(const char* file, int line)
 }
 #define glCheckError() glCheckError_(__FILE__, __LINE__)
 
-void windowResizeCallback(GLFWwindow* window, int width, int height) {
-    fprintf(stdout, "Window resized! New width: %d , and height: %d\n", width, height);
-    //TODO
+
+int steps;
+void startPresentation()
+{
+    steps = 0;
+    myCameraPresentation.set(glm::vec3(15.645752f, 2.912375f, 70.467758f), glm::vec3(15.415703f, 2.912375f, 69.494576f), glm::vec3(0.0f, 1.0f, 0.0f));
 }
 
-void keyboardCallback(GLFWwindow* window, int key, int scancode, int action, int mode) {
+void progress()
+{
+    if (steps < 80)
+    {
+        myCameraPresentation.move(gps::MOVE_BACKWARD, cameraSpeed);
+    }
+
+    if(steps == 80) myCameraPresentation.set(glm::vec3(66.805054f, 16.160664f, 165.931976f), glm::vec3(65.867821f, 16.059607f, 165.598236f), glm::vec3(0.0f, 1.0f, 0.0f));
+        
+    if (steps > 80 && steps < 150)
+    {
+        myCameraPresentation.move(gps::MOVE_FORWARD, cameraSpeed);
+    }
+
+    if (steps == 150) myCameraPresentation.set(glm::vec3(81.684181f, 5.313303f, 34.770737f), glm::vec3(81.323334f, 5.198366f, 35.696255f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    if (steps > 150 && steps < 220)
+    {
+        myCameraPresentation.move(gps::MOVE_FORWARD, cameraSpeed);
+    }
+
+    if (steps == 220) myCameraPresentation.set(glm::vec3(-146.814026f, 6.735712f, 113.727684f), glm::vec3(-145.862518f, 6.676405f, 113.425850f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    if (steps > 220 && steps < 300)
+    {
+        myCameraPresentation.move(gps::MOVE_FORWARD, cameraSpeed);
+    }
+
+    if(steps == 300)
+    {
+        presentation = 0;
+    }
+    steps++;
+}
+
+void windowResizeCallback(GLFWwindow* window, int width, int height) 
+{
+    fprintf(stdout, "Window resized! New width: %d , and height: %d\n", width, height);
+}
+
+void keyboardCallback(GLFWwindow* window, int key, int scancode, int action, int mode) 
+{
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GL_TRUE);
 
     if (key == GLFW_KEY_M && action == GLFW_PRESS)
         showDepthMap = !showDepthMap;
-
-    if (key >= 0 && key < 1024) 
+    if (key == GLFW_KEY_1 && action == GLFW_PRESS)
+        lightEnable[0] = !lightEnable[0];
+    if (key == GLFW_KEY_2 && action == GLFW_PRESS)
+        lightEnable[1] = !lightEnable[1];
+    if (key == GLFW_KEY_3 && action == GLFW_PRESS)
+        lightEnable[2] = !lightEnable[2];
+    if (key == GLFW_KEY_4 && action == GLFW_PRESS)
     {
-        if (action == GLFW_PRESS) 
+        presentation = !presentation;
+        startPresentation();
+    }
+
+    if (key >= 0 && key < 1024)
+    {
+        if (action == GLFW_PRESS)
         {
             pressedKeys[key] = true;
         }
-        else if (action == GLFW_RELEASE) 
+        else if (action == GLFW_RELEASE)
         {
             pressedKeys[key] = false;
         }
@@ -149,6 +214,7 @@ void keyboardCallback(GLFWwindow* window, int key, int scancode, int action, int
 
 void mouseCallback(GLFWwindow* window, double xpos, double ypos)
 {
+    if (presentation)return;
     if (firstMouse)
     {
         lastX = xpos;
@@ -177,6 +243,7 @@ void mouseCallback(GLFWwindow* window, double xpos, double ypos)
 
 void processMovement()
 {
+    if (presentation) return;
     if (pressedKeys[GLFW_KEY_W])
     {
         myCamera.move(gps::MOVE_FORWARD, cameraSpeed);
@@ -207,16 +274,6 @@ void processMovement()
         myCamera.move(gps::MOVE_DOWN, cameraSpeed);
     }
 
-    if (pressedKeys[GLFW_KEY_J]) 
-    {
-        angleY -= 1.0f;
-    }
-
-    if (pressedKeys[GLFW_KEY_L]) 
-    {
-        angleY += 1.0f;
-    }
-
     if (pressedKeys[GLFW_KEY_Q])
     {
         lightAngle -= 1.00f;
@@ -228,22 +285,40 @@ void processMovement()
         lightAngle += 1.00f;
         if (lightAngle > 360.0f) lightAngle -= 360.0f;
     }
+
+    if (pressedKeys[GLFW_KEY_Z]) 
+    {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    }
+
+    if (pressedKeys[GLFW_KEY_X]) 
+    {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    }
+
+    if (pressedKeys[GLFW_KEY_C]) 
+    {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
+    }
 }
 
-void initOpenGLWindow() {
+void initOpenGLWindow() 
+{
     myWindow.Create(1920, 1080, "OpenGL Project Core");
 }
 
-void setWindowCallbacks() {
+void setWindowCallbacks() 
+{
     glfwSetWindowSizeCallback(myWindow.getWindow(), windowResizeCallback);
     glfwSetKeyCallback(myWindow.getWindow(), keyboardCallback);
     glfwSetCursorPosCallback(myWindow.getWindow(), mouseCallback);
 }
 
-void initOpenGLState() {
+void initOpenGLState() 
+{
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glViewport(0, 0, myWindow.getWindowDimensions().width, myWindow.getWindowDimensions().height);
-    
+
     glEnable(GL_DEPTH_TEST); // enable depth-testing
     glDepthFunc(GL_LESS); // depth-testing interprets a smaller value as "closer"
     glEnable(GL_CULL_FACE); // cull face
@@ -253,21 +328,44 @@ void initOpenGLState() {
     glEnable(GL_FRAMEBUFFER_SRGB);
 }
 
-void initModels() 
+void initModels()
 {
-    nanosuit.LoadModel("objects/nanosuit/nanosuit.obj");
-    nanosuit2.LoadModel("objects/nanosuit/nanosuit.obj");
     scene.LoadModel("models/scene/scene.obj");
-    lightCube.LoadModel("objects/cube/cube.obj");
-    screenQuad.LoadModel("objects/quad/quad.obj");
+    lightCube.LoadModel("models/cube/cube.obj");
+    lightCubes[0].LoadModel("models/cubes/cube1.obj");
+    lightCubes[1].LoadModel("models/cubes/cube2.obj");
+    lightCubes[2].LoadModel("models/cubes/cube3.obj");
+    lightCubes[3].LoadModel("models/cubes/cube4.obj");
+    lightCubes[4].LoadModel("models/cubes/cube5.obj");
+    lightCubes[5].LoadModel("models/cubes/cube6.obj");
+    lightCubes[6].LoadModel("models/cubes/cube7.obj");
+    lightCubes[7].LoadModel("models/cubes/cube8.obj");
+    lightCubes[8].LoadModel("models/cubes/cube9.obj");
+    lightCubes[9].LoadModel("models/cubes/cube10.obj");
+    screenQuad.LoadModel("models/quad/quad.obj");
     windmill.LoadModel("models/windmill/windmill.obj");
+    water[0].LoadModel("models/water/water.obj");
+    srand(time(0));
 
-    faces.push_back("textures/skybox/right.tga");
-    faces.push_back("textures/skybox/left.tga");
-    faces.push_back("textures/skybox/top.tga");
-    faces.push_back("textures/skybox/bottom.tga");
-    faces.push_back("textures/skybox/back.tga");
-    faces.push_back("textures/skybox/front.tga");
+    for (int i = 1; i < 2000; i++)
+    {
+        water[i] = water[i-1];
+    }
+
+    for (int i = 0; i < 2000; i++)
+    {
+        float x = (rand() / (float)RAND_MAX) * 30 * 9 - 15;
+        float y = (rand() / (float)RAND_MAX) * 10;
+        float z = (rand() / (float)RAND_MAX) * 25 * 9 - 3;
+        water_drops[i] = glm::vec3(x, y, z);
+    }
+        
+    faces.push_back("models/skybox/right.tga");
+    faces.push_back("models/skybox/left.tga");
+    faces.push_back("models/skybox/top.tga");
+    faces.push_back("models/skybox/bottom.tga");
+    faces.push_back("models/skybox/back.tga");
+    faces.push_back("models/skybox/front.tga");
 
     mySkyBox.Load(faces);
     skyboxShader.loadShader("shaders/skyboxShader.vert", "shaders/skyboxShader.frag");
@@ -278,15 +376,13 @@ void initModels()
     glUniformMatrix4fv(glGetUniformLocation(skyboxShader.shaderProgram, "view"), 1, GL_FALSE,
         glm::value_ptr(view));
 
-    projection = glm::perspective(glm::radians(45.0f), (float)myWindow.getWindowDimensions().width / (float)myWindow.getWindowDimensions().height, 0.1f, 1000.0f);
+    projection = glm::perspective(glm::radians(45.0f), (float)myWindow.getWindowDimensions().width / (float)myWindow.getWindowDimensions().height, 0.1f, 2000.0f);
     glUniformMatrix4fv(glGetUniformLocation(skyboxShader.shaderProgram, "projection"), 1, GL_FALSE,
         glm::value_ptr(projection));
 }
 
-void initShaders() {
-    myBasicShader.loadShader(
-        "shaders/basic.vert",
-        "shaders/basic.frag");
+void initShaders() 
+{
     myCustomShader.loadShader("shaders/shaderStart.vert", "shaders/shaderStart.frag");
     myCustomShader.useShaderProgram();
     lightShader.loadShader("shaders/lightCube.vert", "shaders/lightCube.frag");
@@ -297,7 +393,8 @@ void initShaders() {
     depthMapShader.useShaderProgram();
 }
 
-void initUniforms() {
+void initUniforms() 
+{
     myCustomShader.useShaderProgram();
 
     model = glm::mat4(1.0f);
@@ -312,7 +409,7 @@ void initUniforms() {
     normalMatrixLoc = glGetUniformLocation(myCustomShader.shaderProgram, "normalMatrix");
     glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
 
-    projection = glm::perspective(glm::radians(45.0f), (float)myWindow.getWindowDimensions().width / (float)myWindow.getWindowDimensions().height, 0.1f, 1000.0f);
+    projection = glm::perspective(glm::radians(45.0f), (float)myWindow.getWindowDimensions().width / (float)myWindow.getWindowDimensions().height, 0.1f, 2000.0f);
     projectionLoc = glGetUniformLocation(myCustomShader.shaderProgram, "projection");
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
@@ -320,12 +417,23 @@ void initUniforms() {
     glUniform1i(enableDiscardLoc, 0);
 
     //set the light direction (direction towards the light)
-    
-    lightRotation = glm::vec3(2.0407f, 0.22789f, 2.5488f);
-    lightRotation = glm::vec3(0.0f, 10.0f, -15.0f);
+    lightRotation = glm::vec3(0.0f, 12.0f, -17.0f);
     lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
-    lightDir[1] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));;
-    lightDir[2] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));;
+    lightDir[1] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+    lightDir[2] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+
+    lightDir[3] = glm::vec3(-1.82107f, 0.227888f, 11.8556f);
+    lightDir[4] = glm::vec3(2.04074f, 0.227888f, 11.8556f);
+    lightDir[5] = glm::vec3(-1.82107f, 0.227888f, -8.54741f);
+    lightDir[6] = glm::vec3(2.04074f, 0.227888f, -8.54741f);
+    lightDir[7] = glm::vec3(-1.82107f, 0.227888f, 5.66662f);
+    lightDir[8] = glm::vec3(2.04074f, 0.227888f, 5.66662f);
+    lightDir[9] = glm::vec3(-1.82107f, 0.227888f, 2.54881f);
+    lightDir[10] = glm::vec3(2.04074f, 0.227888f, 2.54881f);
+    lightDir[11] = glm::vec3(-4.56042f, 0.227888f, 2.00436f);
+    lightDir[12] = glm::vec3(8.42223f, 0.227888f, 2.00436f);
+
+
     lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
     glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
 
@@ -333,23 +441,37 @@ void initUniforms() {
     lightColor[0] = glm::vec3(1.0f, 0.0f, 0.0f); //red light
     lightColor[1] = glm::vec3(0.0f, 1.0f, 0.0f); //green light
     lightColor[2] = glm::vec3(0.0f, 0.0f, 1.0f); //blue light
+    for (int i = 3; i < NUMBER_OF_LIGHTS; i++)
+    {
+        lightColor[i] = glm::vec3(1.0f, 0.0f, 0.0f); //red light
+    }
     lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
     glUniform3fv(lightColorLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightColor[0]));
 
-    //set which light are on
+    //set which lights are on
     lightEnable[0] = 1;
     lightEnable[1] = 1;
     lightEnable[2] = 1;
+    for (int i = 3; i < NUMBER_OF_LIGHTS; i++)
+    {
+        lightEnable[i] = 0;
+    }
     lightEnableLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightEnable");
     glUniform1iv(lightEnableLoc, NUMBER_OF_LIGHTS, lightEnable);
 
-    //cube
+    //cubes
     lightShader.useShaderProgram();
     glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+    colorLoc = glGetUniformLocation(lightShader.shaderProgram, "color");
+    for (int i = 0; i < 10; i++)
+    {
+        color[i] = 0;
+    }
+    glUniform1i(colorLoc, 0);
 }
 
-void initFBO() {
-
+void initFBO() 
+{
     //generate FBO ID
     glGenFramebuffers(1, &shadowMapFBO);
 
@@ -378,7 +500,7 @@ void initFBO() {
 glm::mat4 computeLightSpaceTrMatrix()
 {
     glm::mat4 lightView = glm::lookAt(lightDir[0], glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    glm::mat4 lightProjection = glm::ortho(-125.0f, 125.0f, -50.0f, 120.0f, 1.0f, 180.0f);
+    glm::mat4 lightProjection = glm::ortho(-125.0f, 125.0f, -100.0f, 120.0f, 1.0f, 180.0f);
     glm::mat4 lightSpaceTrMatrix = lightProjection * lightView;
 
     return lightSpaceTrMatrix;
@@ -386,49 +508,23 @@ glm::mat4 computeLightSpaceTrMatrix()
 
 float delta = 0;
 float movementSpeed = 10; // units per second
-void updateDelta(double elapsedSeconds) 
+void updateDelta(double elapsedSeconds)
 {
     delta = delta + movementSpeed * elapsedSeconds;
 }
 double lastTimeStamp = glfwGetTime();
 
-void drawObjects(gps::Shader shader, bool depthPass) 
+void drawObjects(gps::Shader shader, bool depthPass)
 {
     shader.useShaderProgram();
     if (!depthPass) glUniform1i(enableDiscardLoc, 0);
-    // nanosuit 1
-    model = glm::rotate(glm::mat4(1.0f), glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
-    glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
-    if (!depthPass)
-    {
-        normalMatrix = glm::mat3(glm::inverseTranspose(model));
-        glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
-    }
-
-    nanosuit.Draw(shader);
-
-    // nanosuit 2
-    model = glm::rotate(glm::mat4(1.0f), glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
-    model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
-    glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-    
-    if (!depthPass)
-    {
-        normalMatrix = glm::mat3(glm::inverseTranspose(model));
-        glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
-    }
-
-    
-    nanosuit2.Draw(shader);
-    
     // scene
     if (!depthPass) glUniform1i(enableDiscardLoc, 1);
     model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
     model = glm::scale(model, glm::vec3(9.0f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     scene.Draw(shader);
-
 
     // get current time
     double currentTimeStamp = glfwGetTime();
@@ -440,6 +536,21 @@ void drawObjects(gps::Shader shader, bool depthPass)
     model = glm::translate(model, glm::vec3(0.374719f, -1.66209f, 0.749788f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     windmill.Draw(shader);
+
+    for (int i = 0; i < 2000; i++)
+    {
+        water_drops[i].y -= 0.10f;
+        if (water_drops[i].y < -2)
+        {
+            water_drops[i] = glm::vec3((rand() / (float)RAND_MAX) * 30 * 9 - 15 * 9, (rand() / (float)RAND_MAX) * 7, (rand() / (float)RAND_MAX) * 25 * 9 - 3 * 9);
+        }
+        
+        model = glm::translate(glm::mat4(1.0f), water_drops[i]);
+        model = glm::scale(model, glm::vec3(1/90.0f));
+
+        glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        water[i].Draw(shader);
+    }
 }
 
 void renderSceneToDepthBuffer()
@@ -456,10 +567,10 @@ void renderSceneToDepthBuffer()
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
-void renderScene() 
+void renderScene()
 {
     // render depth map on screen - toggled with the M key
-    if (showDepthMap) 
+    if (showDepthMap)
     {
         lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
 
@@ -479,8 +590,9 @@ void renderScene()
         screenQuad.Draw(screenQuadShader);
         glEnable(GL_DEPTH_TEST);
     }
-    else 
+    else
     {
+
         renderSceneToDepthBuffer();
 
         // final scene rendering pass (with shadows)
@@ -490,13 +602,20 @@ void renderScene()
 
         myCustomShader.useShaderProgram();
 
-        view = myCamera.getViewMatrix();
+        if (!presentation)view = myCamera.getViewMatrix();
+        else
+        {
+            progress();
+            view = myCameraPresentation.getViewMatrix();
+        }
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
         lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
         lightDir[1] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
         lightDir[2] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
         glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
+
+        glUniform1iv(lightEnableLoc, NUMBER_OF_LIGHTS, lightEnable);
 
         //bind the shadow map
         glActiveTexture(GL_TEXTURE3);
@@ -518,10 +637,28 @@ void renderScene()
 
         model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
         model = glm::scale(model, glm::vec3(9.0f));
+        glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+
+        for (int i = 0; i < 10; i++)
+        {
+            float auxx = myCamera.getDistance(lightDir[i + 3]);
+            if (auxx < 5.0f)
+            {
+                //glUniform1i(colorLoc, color[i]);
+                glUniform1i(colorLoc, 1);
+                //lightEnable[i] = 1;
+            }
+            else
+            {
+                glUniform1i(colorLoc, 0);
+                //lightEnable[i] = 0;
+            }
+            lightCubes[i].Draw(lightShader);
+        }
+
         model = glm::translate(model, 1.0f * lightDir[0]);
         model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-
         lightCube.Draw(lightShader);
 
         // skybox
@@ -530,7 +667,7 @@ void renderScene()
     }
 }
 
-void cleanup() 
+void cleanup()
 {
     myWindow.Delete();
     glDeleteTextures(1, &depthMapTexture);
@@ -539,13 +676,13 @@ void cleanup()
 
 }
 
-int main(int argc, const char* argv[]) 
+int main(int argc, const char* argv[])
 {
-    try 
+    try
     {
         initOpenGLWindow();
     }
-    catch (const std::exception& e) 
+    catch (const std::exception& e)
     {
         std::cerr << e.what() << std::endl;
         return EXIT_FAILURE;
@@ -564,7 +701,7 @@ int main(int argc, const char* argv[])
 
     glCheckError();
     // application loop
-    while (!glfwWindowShouldClose(myWindow.getWindow())) 
+    while (!glfwWindowShouldClose(myWindow.getWindow()))
     {
         processMovement();
         renderScene();

@@ -1,6 +1,6 @@
 #version 410 core
 
-#define NUMBER_OF_LIGHTS 3
+#define NUMBER_OF_LIGHTS 13
 
 in vec3 fNormal;
 in vec4 fPosEye;
@@ -28,8 +28,6 @@ uniform sampler2D shadowMap;
 
 uniform int enableDiscard;
 
-
-
 float shadow = 1.0f;
 
 float constant = 1.0f, linear = 0.014f, quadratic = 0.0007f;
@@ -56,7 +54,8 @@ void computeLightComponents()
 		lightDirN = normalize(lightDir[i]);
 
 		dist = length(lightDir[i]);
-		att = 1.0f / (constant + linear * dist + quadratic * (dist * dist));
+		if(i < 3) att = 1.0f / (constant + linear * dist + quadratic * (dist * dist));
+		else att = 1.0f / (constant + linear * dist + 0.04f * (dist * dist));
 
 		//compute view direction 
 		vec3 viewDirN = normalize(cameraPosEye - fPosEye.xyz);
@@ -91,7 +90,6 @@ float computeShadow()
 
 	// Check whether current frag pos is in shadow
 	float bias = max(0.05f * (1.0f - dot(fNormal, lightDir[0])), 0.005f);
-	//float bias = 0.005f;
 	float shadow = currentDepth - bias > closestDepth ? 1.0f : 0.0f;
 	
 	if (normalizedCoords.z > 1.0f)
@@ -102,7 +100,7 @@ float computeShadow()
 
 float computeFog()
 {
-	 float fogDensity = 0.00f;
+	 float fogDensity = 0.0005f;
 	 float fragmentDistance = length(fPosEye);
 	 float fogFactor = exp(-pow(fragmentDistance * fogDensity, 2));
  
@@ -115,7 +113,6 @@ void main()
 	
 	vec3 baseColor = vec3(0.9f, 0.35f, 0.0f);//orange
 	
-
 	ambient *= texture(diffuseTexture, fTexCoords).rgb;
 	diffuse *= texture(diffuseTexture, fTexCoords).rgb;
 	specular *= texture(specularTexture, fTexCoords).rgb;
@@ -127,15 +124,9 @@ void main()
 			discard;
 	}
 
-
-	//modulate with shadow
 	shadow = computeShadow();
 	vec3 color = min((ambient + (1.0f - shadow)*diffuse) + (1.0f - shadow)*specular, 1.0f);
-	//vec3 color = min((ambient + diffuse) + specular, 1.0f);
     float fogFactor = computeFog();
 	vec4 fogColor = vec4(0.5f, 0.5f, 0.5f, 1.0f);
-	//fColor = mix(fogColor, color, fogFactor);
 	fColor = fogColor * (1 - fogFactor) + vec4(color, 1.0f) * fogFactor;
-
-    //fColor = fogColor;//
 }

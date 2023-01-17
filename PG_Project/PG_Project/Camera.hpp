@@ -23,7 +23,9 @@ namespace gps {
         //yaw - camera rotation around the y axis
         //pitch - camera rotation around the x axis
         void rotate(float pitch, float yaw);
-        
+        float getDistance(glm::vec3 point);
+        void set(glm::vec3 cameraPosition, glm::vec3 cameraTarget, glm::vec3 cameraUp);
+        void print();
     private:
         glm::vec3 cameraPosition;
         glm::vec3 cameraTarget;
