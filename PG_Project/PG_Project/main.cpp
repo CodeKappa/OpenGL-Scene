@@ -17,8 +17,8 @@
 
 #define NUMBER_OF_LIGHTS 3
 
-const unsigned int SHADOW_WIDTH = 10048;
-const unsigned int SHADOW_HEIGHT = 10048;
+const unsigned int SHADOW_WIDTH = 15048;
+const unsigned int SHADOW_HEIGHT = 15048;
 
 // window
 gps::Window myWindow;
@@ -56,7 +56,7 @@ gps::Camera myCamera(
     glm::vec3(0.0f, 0.0f, -10.0f),
     glm::vec3(0.0f, 1.0f, 0.0f));
 
-GLfloat cameraSpeed = 0.3f;
+GLfloat cameraSpeed = 0.7f;
 
 GLboolean pressedKeys[1024];
 
@@ -66,8 +66,9 @@ gps::Model3D nanosuit2;
 gps::Model3D lightCube;
 gps::Model3D screenQuad;
 gps::Model3D scene;
+gps::Model3D windmill;
 
-GLfloat angleY, lightAngle;
+GLfloat angleY, lightAngle, windAngle;
 
 // shaders
 gps::Shader myBasicShader;
@@ -230,7 +231,7 @@ void processMovement()
 }
 
 void initOpenGLWindow() {
-    myWindow.Create(1024, 768, "OpenGL Project Core");
+    myWindow.Create(1920, 1080, "OpenGL Project Core");
 }
 
 void setWindowCallbacks() {
@@ -259,6 +260,7 @@ void initModels()
     scene.LoadModel("models/scene/scene.obj");
     lightCube.LoadModel("objects/cube/cube.obj");
     screenQuad.LoadModel("objects/quad/quad.obj");
+    windmill.LoadModel("models/windmill/windmill.obj");
 
     faces.push_back("textures/skybox/right.tga");
     faces.push_back("textures/skybox/left.tga");
@@ -319,16 +321,17 @@ void initUniforms() {
 
     //set the light direction (direction towards the light)
     
-    lightRotation = glm::vec3(25.0f, 25.0f, 25.0f);
+    lightRotation = glm::vec3(2.0407f, 0.22789f, 2.5488f);
+    lightRotation = glm::vec3(0.0f, 10.0f, -15.0f);
     lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
-    lightDir[1] = lightRotation;
-    lightDir[2] = lightRotation;
+    lightDir[1] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));;
+    lightDir[2] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));;
     lightDirLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightDir");
     glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
 
     //set light color
-    lightColor[0] = glm::vec3(0.0f, 1.0f, 0.0f); //red light
-    lightColor[1] = glm::vec3(1.0f, 0.0f, 0.0f); //green light
+    lightColor[0] = glm::vec3(1.0f, 0.0f, 0.0f); //red light
+    lightColor[1] = glm::vec3(0.0f, 1.0f, 0.0f); //green light
     lightColor[2] = glm::vec3(0.0f, 0.0f, 1.0f); //blue light
     lightColorLoc = glGetUniformLocation(myCustomShader.shaderProgram, "lightColor");
     glUniform3fv(lightColorLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightColor[0]));
@@ -375,14 +378,20 @@ void initFBO() {
 glm::mat4 computeLightSpaceTrMatrix()
 {
     glm::mat4 lightView = glm::lookAt(lightDir[0], glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    glm::mat4 lightProjection = glm::ortho(-50.0f, 50.0f, -50.0f, 50.0f, 0.01f, 100.0f);
+    glm::mat4 lightProjection = glm::ortho(-125.0f, 125.0f, -50.0f, 120.0f, 1.0f, 180.0f);
     glm::mat4 lightSpaceTrMatrix = lightProjection * lightView;
 
     return lightSpaceTrMatrix;
 }
 
-GLint x = 1;
-GLint y = 0;
+float delta = 0;
+float movementSpeed = 10; // units per second
+void updateDelta(double elapsedSeconds) 
+{
+    delta = delta + movementSpeed * elapsedSeconds;
+}
+double lastTimeStamp = glfwGetTime();
+
 void drawObjects(gps::Shader shader, bool depthPass) 
 {
     shader.useShaderProgram();
@@ -413,14 +422,24 @@ void drawObjects(gps::Shader shader, bool depthPass)
     
     nanosuit2.Draw(shader);
     
-
     // scene
     if (!depthPass) glUniform1i(enableDiscardLoc, 1);
     model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
     model = glm::scale(model, glm::vec3(9.0f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-
     scene.Draw(shader);
+
+
+    // get current time
+    double currentTimeStamp = glfwGetTime();
+    updateDelta(currentTimeStamp - lastTimeStamp);
+    lastTimeStamp = currentTimeStamp;
+
+    model = glm::translate(model, glm::vec3(-0.374719f, 1.66209f, -0.749788f));
+    model = glm::rotate(model, glm::radians(delta), glm::vec3(0.0f, 0.0f, 1.0f));
+    model = glm::translate(model, glm::vec3(0.374719f, -1.66209f, 0.749788f));
+    glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+    windmill.Draw(shader);
 }
 
 void renderSceneToDepthBuffer()
@@ -475,6 +494,8 @@ void renderScene()
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
         lightDir[0] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+        lightDir[1] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
+        lightDir[2] = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, 1.0f, 0.0f)) * glm::vec4(lightRotation, 1.0f));
         glUniform3fv(lightDirLoc, NUMBER_OF_LIGHTS, glm::value_ptr(lightDir[0]));
 
         //bind the shadow map
@@ -495,6 +516,8 @@ void renderScene()
 
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
 
+        model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(9.0f));
         model = glm::translate(model, 1.0f * lightDir[0]);
         model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
         glUniformMatrix4fv(glGetUniformLocation(lightShader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));

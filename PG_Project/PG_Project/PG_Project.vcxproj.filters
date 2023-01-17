@@ -94,5 +94,11 @@
     <None Include="shaders\shaderStart.vert">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="shaders\lightCube.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\lightCube.vert">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
