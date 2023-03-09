@@ -72,7 +72,9 @@ gps::Model3D nanosuit2;
 gps::Model3D lightCube;
 gps::Model3D lightCubes[10];
 gps::Model3D screenQuad;
-gps::Model3D scene;
+gps::Model3D scene1;
+gps::Model3D scene2;
+gps::Model3D scene3;
 gps::Model3D windmill;
 gps::Model3D water[2000];
 
@@ -330,7 +332,9 @@ void initOpenGLState()
 
 void initModels()
 {
-    scene.LoadModel("models/scene/scene.obj");
+    scene1.LoadModel("models/scene/scene1.obj");
+    scene2.LoadModel("models/scene/scene2.obj");
+    scene3.LoadModel("models/scene/scene3.obj");
     lightCube.LoadModel("models/cube/cube.obj");
     lightCubes[0].LoadModel("models/cubes/cube1.obj");
     lightCubes[1].LoadModel("models/cubes/cube2.obj");
@@ -524,7 +528,9 @@ void drawObjects(gps::Shader shader, bool depthPass)
     model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f));
     model = glm::scale(model, glm::vec3(9.0f));
     glUniformMatrix4fv(glGetUniformLocation(shader.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-    scene.Draw(shader);
+    scene1.Draw(shader);
+    scene2.Draw(shader);
+    scene3.Draw(shader);
 
     // get current time
     double currentTimeStamp = glfwGetTime();

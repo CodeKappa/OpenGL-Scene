@@ -1,0 +1,1944 @@
+# Blender 3.3.1 MTL File: 'None'
+# www.blender.org
+
+newmtl Lanternlambert7SG.004
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
+
+newmtl Lanternlambert7SG.005
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
+
+newmtl Lanternlambert7SG.006
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
+
+newmtl Lanternlambert7SG.007
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
+
+newmtl Lanternlambert7SG.008
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
+
+newmtl Lanternlambert7SG.009
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/lantern/Lanternlambert7SG_diffuse.png
+
+newmtl None.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/boards_and_planks_bc.png
+
+newmtl None_logwood_bc.png.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl None_logwood_bc.png.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/silo/tiled_dirty_planks.png
+
+newmtl blinn1SG.085
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.086
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.087
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.088
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.089
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.090
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.091
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.092
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.093
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.094
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.095
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.096
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.097
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.098
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.099
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.100
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.101
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.102
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.103
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.104
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.105
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.106
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.107
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.108
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.109
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.110
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.111
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.112
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.113
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.114
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.115
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.116
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.117
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.118
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.119
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.120
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.121
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.122
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.123
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.124
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.125
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.126
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.127
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.128
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.129
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.130
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.131
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.132
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.133
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.134
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.135
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.136
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.137
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.138
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.139
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.140
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.141
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.142
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.143
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.144
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.145
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.146
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.147
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.148
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.149
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.150
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.151
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.152
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.153
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.154
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.155
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.156
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.157
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.158
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.159
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.160
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.161
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.162
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.163
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.164
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.165
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.166
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.167
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.168
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.169
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.170
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.171
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.172
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.173
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.174
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.175
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.176
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.177
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.178
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.179
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.180
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.181
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.182
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.183
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl blinn1SG.184
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/wheat/blinn1SG_baseColor.png
+map_d textures/wheat/blinn1SG_baseColor.png
+map_Bump -bm 1.000000 textures/wheat/blinn1SG_normal.png
+
+newmtl concrete.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/concrete_bc.jpg
+map_d textures/concreteHouse/concrete_roughness.jpg
+map_Bump -bm 1.000000 textures/concreteHouse/concrete_n.jpg
+
+newmtl dark_logwood_pattern.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/forge/dark_pattern_logwood_bc.jpg
+map_d textures/forge/pattern_logwood_roughness.jpg
+map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
+
+newmtl dirty_wood.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/sticks_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/sticks_normal.png
+
+newmtl initialShadingGroup.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl initialShadingGroup.002
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl initialShadingGroup.003
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl initialShadingGroup.004
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert2SG.001
+Ns 73.617279
+Ka 0.753007 0.753007 0.753007
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/campfire/lambert2SG_baseColor.jpeg
+
+newmtl lambert2SG.002
+Ns 73.617279
+Ka 0.753007 0.753007 0.753007
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/campfire/lambert2SG_baseColor.jpeg
+
+newmtl lambert2SG.003
+Ns 73.617279
+Ka 0.753007 0.753007 0.753007
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/campfire/lambert2SG_baseColor.jpeg
+
+newmtl lambert2SG.004
+Ns 73.617279
+Ka 0.753007 0.753007 0.753007
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/campfire/lambert2SG_baseColor.jpeg
+
+newmtl lambert3SG.001
+Ns 895.930969
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert3SG_baseColor.jpeg
+
+newmtl lambert3SG.002
+Ns 895.930969
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert3SG_baseColor.jpeg
+
+newmtl lambert3SG.003
+Ns 895.930969
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert3SG_baseColor.jpeg
+
+newmtl lambert3SG.004
+Ns 895.930969
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert3SG_baseColor.jpeg
+
+newmtl lambert4SG.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert4SG.002
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert4SG.003
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert4SG.004
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl lambert5SG.001
+Ns 556.214294
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert5SG_baseColor.jpeg
+
+newmtl lambert5SG.002
+Ns 556.214294
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert5SG_baseColor.jpeg
+
+newmtl lambert5SG.003
+Ns 556.214294
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert5SG_baseColor.jpeg
+
+newmtl lambert5SG.004
+Ns 556.214294
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert5SG_baseColor.jpeg
+
+newmtl lambert6SG.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert6SG_baseColor.jpeg
+
+newmtl lambert6SG.002
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert6SG_baseColor.jpeg
+
+newmtl lambert6SG.003
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert6SG_baseColor.jpeg
+
+newmtl lambert6SG.004
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/campfire/lambert6SG_baseColor.jpeg
+
+newmtl light_wood.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/eagleHut/boards_bc.jpg
+map_d textures/eagleHut/boards_roughness.jpg
+map_Bump -bm 1.000000 textures/eagleHut/boards_n.jpg
+
+newmtl light_wood.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/eagleHut/boards_bc.jpg
+map_d textures/eagleHut/boards_roughness.jpg
+map_Bump -bm 1.000000 textures/eagleHut/boards_n.jpg
+
+newmtl pattern_logwood.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/forge/pattern_logwood_bc.jpg
+map_d textures/forge/pattern_logwood_roughness.jpg
+map_Bump -bm 1.000000 textures/forge/pattern_logwood_normal.jpg
+
+newmtl red_dirty_wood.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/reedHut/roof_basecolor.png
+map_d textures/reedHut/sticks+roof_roughness.jpg
+map_Bump -bm 1.000000 textures/reedHut/roof_normal.png
+
+newmtl redwood.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/T_tiled_redwood_bc.png
+map_d textures/concreteHouse/T_tiled_redwood_n.png
+map_Bump -bm 1.000000 textures/concreteHouse/T_tiled_redwood_n.png
+
+newmtl roof.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/concreteHouse/roof_bc.png
+map_d textures/concreteHouse/roof_roughness.png
+map_Bump -bm 1.000000 textures/concreteHouse/roof_n.png
+
+newmtl thatch.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/silo/thatch_bc.png
+
+newmtl thatch.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/thatch_bc2.png
+map_d textures/hut/thatch_roughness.png
+map_Bump -bm 1.000000 textures/hut/thatch_n.png
+
+newmtl thatch_opacity.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl thatch_opacity.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd textures/silo/thatch_bc3a.png
+map_d textures/silo/thatch_opacity.png
+
+newmtl wood.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/base_color.png
+map_d textures/hut/Roughness.png
+map_Bump -bm 1.000000 textures/hut/normal.png
+
+newmtl wood2.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png
+
+newmtl wood2.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd textures/hut/T_brightwood_basecolor.png
+map_d textures/hut/T_wood_normal.png
+map_Bump -bm 1.000000 textures/hut/T_wood_roughness.png

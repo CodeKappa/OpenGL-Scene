@@ -70,12 +70,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\basic.frag">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="shaders\basic.vert">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="shaders\depthMap.frag">
       <Filter>Resource Files</Filter>
     </None>
