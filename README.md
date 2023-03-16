@@ -1,5 +1,4 @@
 # OpenGL Scene
-
 OpenGL application that implements various graphic algorithms
 
 <img src="https://user-images.githubusercontent.com/80217340/224152606-62faf8cc-0651-45c4-92b2-1f32934521f4.png" width="400" height = "200"> <img src="https://user-images.githubusercontent.com/80217340/224152813-2cbd8406-b98a-40f8-b9f6-f64d742355c9.png" width="400" height = "200">
